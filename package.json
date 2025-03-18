@@ -1,8 +1,0 @@
-{
-  "name": "butter-money",
-  "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
-}
