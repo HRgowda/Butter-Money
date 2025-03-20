@@ -22,9 +22,11 @@ model User {
 }
 
 model Pdf {
-  id Int @unique @default(autoincrement())
+  id Int @id @unique @default(autoincrement())
   userid Int
-  data String
+  data Json
+  fileUrl String
+  fileType String
   createdAt DateTime @default(now())
   user User @relation(fields: [userid], references: [id])
 }
