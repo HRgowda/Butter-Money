@@ -7,7 +7,7 @@ const router = express.Router();
 
 const SECRET_KEY = process.env.JWT_SECRET || 'my_super_secret_key';
 
-// Signup
+// Signup endpoint
 router.post('/signup', async (req: any, res: any) => {
   try {
     const { username, password } = req.body;
@@ -41,7 +41,7 @@ router.post('/signup', async (req: any, res: any) => {
 });
 
 
-// Signin
+// Signin endpoint
 router.post('/signin', async (req: any, res: any) => {
 
   try {
