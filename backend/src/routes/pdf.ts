@@ -18,7 +18,7 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
 // PDF Table Extraction 
-class PDFTableExtractor {
+class    {
   /**
    * Extract tables from PDF buffer
    * @param pdfBuffer The PDF buffer
